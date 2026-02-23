@@ -1,6 +1,6 @@
 //Learned from GSAP Docs and GSAP forums: https://greensock.com/docs/ and https://greensock.com/forums/
 gsap.registerPlugin("ScrollTrigger");//registers ScrollTrigger plugin
-var splitBenjamin = new SplitType(".benjamin", { types: 'chars' })//splits the element into spans of single letters
+var splitLucy = new SplitType(".Lucy", { types: 'chars' })//splits the element into spans of single letters
 var splitIntro = new SplitType(".intro", { types: 'words' })//splits the paragraph into spans of words
 //making this a constant breaks the code idk why
 //random speeds for homepage

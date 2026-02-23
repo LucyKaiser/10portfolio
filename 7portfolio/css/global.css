@@ -100,12 +100,12 @@ body {
   overflow-x: hidden;
 }
 
-.benjamin {
+.Lucy {
   font-size: 5vw;
   color: var(--orangeyellow);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-.benjaminkaiser {
+.Lucykaiser {
   font-weight: bold;
   float: left;
   color: rgb(240, 248, 255);
@@ -234,7 +234,7 @@ body {
   z-index: 100;
 }
 
-.benjamin,
+.Lucy,
 .hello,
 .mynameis {
   display: inline-block;
