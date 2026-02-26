@@ -22,6 +22,7 @@
     <!-- Link this page's Javascript file to this file, as well as the global JS file -->
     <script type="text/javascript" src="js/homepage.js"></script>
     <script type="text/javascript" src="js/global.js"></script>
+    <script src="js/homepageAnimation.js"></script>
 
     <!-- CDN link for lenis smooth scrolling JS library -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
@@ -32,7 +33,8 @@
 
   </head>
   <body class="animate-all">
-    <div class="grainy-background">
+    <canvas id="canvas"></canvas>
+    <div class="grainy-background" id="grainy-background">
       <nav>
         <div class="logo-wrapper">
           <a class="logo" href="index.html">Lucy Kaiser</a>

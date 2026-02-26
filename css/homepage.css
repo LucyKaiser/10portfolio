@@ -1,6 +1,7 @@
 body {
   background-color: #1a1a1a;
   color: #e2e2e2;
+  user-select: none;
 }
 
 .me-img {
@@ -36,6 +37,8 @@ body {
 .homepage-text {
   height: -moz-fit-content;
   height: fit-content;
+  width: 500px;
+  /* margin-left:100px; */
 }
 
 .hero-header {
@@ -170,4 +173,17 @@ body {
 }
 .grainy-background {
   background-image: url(../img/homepage_bg.svg);
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  filter: blur(1px) brightness(1.1);
+}
+.grainy-background * {
+  z-index:3;
+  /* text-shadow: #101010; */
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
 }
