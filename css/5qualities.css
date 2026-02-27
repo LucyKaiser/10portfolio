@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  background-image: url(../img/5qualitybg.svg);
+  /* background-image: url(../img/5qualitybg.svg); */
   height: 100vh !important; /* Override other height properties */
 }
 
@@ -109,11 +109,11 @@ body {
   .scroll-box-element {
     margin: 25px;
   }
-  body {
-    background-image: url(../img/5qualitybg.svg);
-  }
 }
 /* If prefers reduced motion is true: */
+body {
+  background-image: url(../img/5qualitybg.svg);
+}
 @media not screen and (prefers-reduced-motion: reduce) {
   .scroll-wrapper-wrapper {
     height: 100%;

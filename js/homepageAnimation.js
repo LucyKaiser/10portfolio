@@ -320,13 +320,13 @@ function hue_to_rgb(p, q, t) {
         drawBatch();
     }
 setTimeout(()=> {
-    let element = document.getElementById("grainy-background")
+    let element = document.getElementById("hero-section")
     canvas.width = element.offsetWidth
-    canvas.height = element.offsetHeight
+    canvas.height = element.offsetHeight-20
     
     centerX = canvas.width / 2;
     centerY = canvas.height / 2;
-    startDraw({numberOfVertices:50, rType:3, nValue:0.35, numOfPoints:30000, radius:Math.min(canvas.width, canvas.height) * 1.5, colorBool:true, lightenBool:true, noClear:true}, true)
+    startDraw({numberOfVertices:50, rType:3, nValue:0.35, numOfPoints:3000, radius:Math.min(canvas.width, canvas.height) * 1.5, colorBool:true, lightenBool:true, noClear:true}, true)
     
     window.addEventListener('resize', () => {
         targetWidth = getComputedStyle(document.getElementById("grainy-background")).width
@@ -335,7 +335,7 @@ setTimeout(()=> {
         canvas.width = targetWidth
         centerX = canvas.width / 2;
     centerY = canvas.height / 2;
-    startDraw({numberOfVertices:50, rType:3, nValue:0.35, numOfPoints:30000, radius:Math.min(canvas.width, canvas.height) * 1.5, colorBool:true, lightenBool:true, noClear:true}, true)
+    startDraw({numberOfVertices:50, rType:3, nValue:0.35, numOfPoints:3000, radius:Math.min(canvas.width, canvas.height) * 1.5, colorBool:true, lightenBool:true, noClear:true}, true)
 
     });
     // const canvas = document.getElementById("canvas");

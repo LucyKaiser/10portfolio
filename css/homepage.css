@@ -24,6 +24,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0px 8vw;
+  min-height: 80vh;
 }
 
 .hero-yapping {
@@ -37,14 +38,19 @@ body {
 .homepage-text {
   height: -moz-fit-content;
   height: fit-content;
-  width: 500px;
+  width: 600px;
   /* margin-left:100px; */
+  padding: 32px 0px 32px 32px;
+  background-color: #1a1a1abd;
+  border-radius: 32px;
+  backdrop-filter: blur(32px);
+
 }
 
 .hero-header {
   margin-bottom: 8px;
-  font-family: "cormorant-garamond", serif;
-  font-weight: 700;
+  /* font-family: "cormorant-garamond", serif; */
+  font-weight: 900;
   font-style: normal;
   font-size: 6rem;
   word-spacing: 1000000px;
@@ -52,6 +58,8 @@ body {
   letter-spacing: 20%;
   margin-bottom: 40px;
   margin-top: 8px;
+  position: relative;
+  width: fit-content;
 }
 
 .grainy-background {
@@ -109,8 +117,12 @@ body {
   flex-direction: row;
 }
 
-.footer-homepage-conent {
-  background-color: #1a1a1a;
+/* .footer-homepage-conent {
+  background-color: #e2e2e2 !important;
+} */
+.homepage-footer {
+  background-color: #e2e2e2;
+  color: #101010;
 }
 
 .homepage-footer {
@@ -135,7 +147,7 @@ body {
   width: 100vw;
   white-space: no-wrap;
   text-align: center;
-  color: #696969;
+  /* color: #696969; */
 }
 
 .source-code-link a:link {
@@ -182,8 +194,37 @@ canvas {
   z-index: 0;
   filter: blur(1px) brightness(1.1);
 }
-.grainy-background * {
+.text-shadow {
   z-index:3;
   /* text-shadow: #101010; */
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.3));
+}
+.image-section {
+  width: 100vw;
+  background-color: #e2e2e2;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  z-index: 10;
+  color:#101010
+}
+.image-section-content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.four-year-plan-wrapper, .me-image-wrapper {
+  width:25vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.four-year-image, .me-image-image {
+  max-width: 25vw;
+
+}
+.me-image-wrapper {
+}
+.four-year-plan-image, .me-image {
+  width: 100%;
 }
